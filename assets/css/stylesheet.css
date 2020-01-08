@@ -95,3 +95,44 @@ h5 {
   margin-top: 15px;
   background-color: var(--weight-three);
 }
+
+.articles-ad-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--weight-five);
+    grid-column: span 2;
+    text-align: center;
+}
+
+.articles-ad-space h2 {
+  font-size: 80px;
+  font-family: sans-serif;
+}
+
+.ad-space-middle {
+  display: grid;
+  grid-template-rows: 653px 169px 950px;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.ad-space-middle>div:first-child {
+  background-color: var(--weight-one);
+  display: flex;
+  width: 93%;
+  margin: 0 auto;
+  height: 100%;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.ad-image {
+  background-color: var(--weight-five);
+  margin-top: 30px;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+}
