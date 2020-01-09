@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap");
+
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -128,6 +129,19 @@ h5 {
   align-items: center;
 }
 
+.first-article>h2 {
+  background-color: var(--weight-three);
+  font-family: "Averia Serif Libre", cursive;
+  font-size: calc(1.375rem + 1.6vw);
+  margin-top: 25px;
+}
+
+.first-article>p {
+  width: 50%;
+  background-color: var(--weight-two);
+  line-height: 2.4em;
+  font-size: 1.2em;
+}
 
 .ad-image {
   background-color: var(--weight-five);
@@ -136,3 +150,59 @@ h5 {
   height: 175px;
   border-radius: 50%;
 }
+
+.all-latest-articles-section {
+  display: flex;
+  height: 169px;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-latest-articles-section>p {
+  background-color: var(--weight-three);
+}
+
+.second-ad {
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--weight-one);
+}
+
+.second-ad>h2 {
+  background-color: var(--weight-five);
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 2.8rem;
+  width: 60%;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.second-ad>p {
+  background-color: var(--weight-two);
+  font-family: serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  width: 60%;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.ad-image-container {
+  background-color: var(--weight-five);
+  margin-top: 2rem;
+  height: 600px;
+  width: 70%;
+}
+
+.ad-image-container>h2 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -50%);
+  font-size: 2.8rem;
+}
+
+
+
