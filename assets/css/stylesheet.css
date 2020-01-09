@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Spinnaker&display=swap");
+
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -8,15 +9,15 @@
 }
 
 body {
-  width: 100vw;
+  overflow-x: hidden;
 }
 
 :root {
   --weight-one: #b3b3b3;
   --weight-two: #a6a6a6;
-  --weight-three: #999999;
+  --weight-three: #999;
   --weight-four: #808080;
-  --weight-five: #666666;
+  --weight-five: #666;
 }
 
 nav {
@@ -28,8 +29,21 @@ nav {
   padding: 24px 0 4px 0;
 }
 
+.hidden-header {
+  display: none;
+}
+
 .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--weight-two);
+}
+
+.nav-item > h2 {
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .latest-articles-container {
@@ -43,7 +57,17 @@ nav {
 }
 
 .latest-articles-item {
-  background-color: var(--weight-three);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--weight-four);
+}
+
+.latest-articles-item > h2 {
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 37px;
+  text-align: center;
+  background-color: var(--weight-five);
 }
 
 .latest-article-banner {
@@ -71,7 +95,6 @@ nav {
 
 .latest-posts-container article h3 {
   font-weight: bold;
-
   background-color: var(--weight-five);
   font-size: calc(1.2em + 0.2vw);
   margin: 0 0 1em;
@@ -89,8 +112,44 @@ h5 {
   background-color: var(--weight-five);
   font-size: calc(1.2em + 0.2vw);
   font-size: 0.8em;
-
   font-family: "Averia Serif Libre", cursive;
+}
+
+.first-article > p {
+  width: 50%;
+  background-color: var(--weight-two);
+  line-height: 2.4em;
+  font-size: 1.2em;
+}
+
+.second-ad {
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--weight-one);
+}
+
+.all-latest-articles-section > p {
+  background-color: var(--weight-three);
+}
+
+.person-description p {
+  font-family: "Spinnaker", sans-serif;
+  font-size: 1.3em;
+  margin: 10px 10px 2rem 10px;
+  background-color: var(--weight-three);
+  line-height: 1.4em;
+}
+
+.second-ad > p {
+  background-color: var(--weight-two);
+  font-family: serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  width: 60%;
+  margin-top: 1.2rem;
+  text-align: center;
 }
 
 .latest-posts-container article p {
@@ -122,6 +181,15 @@ h5 {
   gap: 5px;
 }
 
+footer > ul {
+  display: grid;
+  background-color: var(--weight-five);
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-auto-rows: 30px;
+  align-content: center;
+  height: 621px;
+}
+
 .ad-space-middle > div:first-child {
   background-color: var(--weight-one);
   display: flex;
@@ -140,13 +208,6 @@ h5 {
   margin-top: 25px;
 }
 
-.first-article > p {
-  width: 50%;
-  background-color: var(--weight-two);
-  line-height: 2.4em;
-  font-size: 1.2em;
-}
-
 .ad-image {
   background-color: var(--weight-five);
   margin-top: 30px;
@@ -162,34 +223,12 @@ h5 {
   align-items: center;
 }
 
-.all-latest-articles-section > p {
-  background-color: var(--weight-three);
-}
-
-.second-ad {
-  height: 950px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--weight-one);
-}
-
 .second-ad > h2 {
   background-color: var(--weight-five);
   font-family: "Averia Serif Libre", cursive;
   font-size: 2.8rem;
   width: 60%;
   margin-top: 100px;
-  text-align: center;
-}
-
-.second-ad > p {
-  background-color: var(--weight-two);
-  font-family: serif;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  width: 60%;
-  margin-top: 1.2rem;
   text-align: center;
 }
 
@@ -235,14 +274,6 @@ h5 {
   background-color: var(--weight-three);
 }
 
-.person-description p {
-  font-family: "Spinnaker", sans-serif;
-  font-size: 1.3em;
-  margin: 10px 10px 2rem 10px;
-  background-color: var(--weight-three);
-  line-height: 1.4em;
-}
-
 .more-articles-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(621px, 1fr));
@@ -264,6 +295,34 @@ h5 {
   margin: 0 20px 0 0;
   background-color: var(--weight-four);
 }
+
+.design-systems-ad {
+  background-color: var(--weight-five);
+  height: 409px;
+}
+
+.guides-item > h2 {
+  background-color: var(--weight-four);
+  font-size: 1.4rem;
+  font-family: "Averia Serif Libre", cursive;
+  padding: 20px 5px;
+}
+
+.guides-ad-container > h2 {
+  font-size: 2.4rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.design-systems-ad > h2 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.4rem;
+  text-align: center;
+}
+
 .more-articles-item article h2 {
   font-size: 2rem;
   font-family: "Averia Serif Libre", cursive;
@@ -293,19 +352,6 @@ h5 {
   background-color: var(--weight-four);
 }
 
-.design-systems-ad {
-  background-color: var(--weight-five);
-  height: 409px;
-}
-
-.design-systems-ad > h2 {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2.4rem;
-  text-align: center;
-}
-
 .guides-container {
   display: grid;
   margin: 20px 0 10px;
@@ -322,15 +368,14 @@ h5 {
   background-color: var(--weight-one);
 }
 
-.guides-item > h2 {
-  background-color: var(--weight-four);
-  font-size: 1.4rem;
-  font-family: "Averia Serif Libre", cursive;
-  padding: 20px 5px;
-}
-
 .guides-item > ul {
   list-style-type: disc;
+}
+
+footer ul li {
+  list-style-type: disc;
+  padding: 10px 10px 10px 0;
+  margin: 0 10px;
 }
 
 .guides-item > ul > li {
@@ -347,28 +392,8 @@ h5 {
   text-align: center;
 }
 
-.guides-ad-container > h2 {
-  font-size: 2.4rem;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
 footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-footer > div {
-  display: grid;
-  background-color: var(--weight-five);
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  grid-auto-rows: 30px;
-  align-content: center;
-  height: 621px;
-}
-
-footer div li {
-  list-style-type: disc;
-  padding: 10px 10px 10px 0;
-  margin: 0 10px;
 }
