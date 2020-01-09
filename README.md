@@ -1,4 +1,4 @@
-# HTML Forms Project
+# HTML Design Teardown Project
 
 > This is our fifth project on the HTML/CSS section of the course. It's an exercise in identifying the visual weight of the components in the page, and coloring them in a gray scale as a sort of "heat map"
 
