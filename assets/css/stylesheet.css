@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Spinnaker&display=swap");
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -98,12 +98,12 @@ h5 {
 }
 
 .articles-ad-space {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--weight-five);
-    grid-column: span 2;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--weight-five);
+  grid-column: span 2;
+  text-align: center;
 }
 
 .articles-ad-space h2 {
@@ -118,7 +118,7 @@ h5 {
   gap: 5px;
 }
 
-.ad-space-middle>div:first-child {
+.ad-space-middle > div:first-child {
   background-color: var(--weight-one);
   display: flex;
   width: 93%;
@@ -129,14 +129,14 @@ h5 {
   align-items: center;
 }
 
-.first-article>h2 {
+.first-article > h2 {
   background-color: var(--weight-three);
   font-family: "Averia Serif Libre", cursive;
   font-size: calc(1.375rem + 1.6vw);
   margin-top: 25px;
 }
 
-.first-article>p {
+.first-article > p {
   width: 50%;
   background-color: var(--weight-two);
   line-height: 2.4em;
@@ -158,7 +158,7 @@ h5 {
   align-items: center;
 }
 
-.all-latest-articles-section>p {
+.all-latest-articles-section > p {
   background-color: var(--weight-three);
 }
 
@@ -170,7 +170,7 @@ h5 {
   background-color: var(--weight-one);
 }
 
-.second-ad>h2 {
+.second-ad > h2 {
   background-color: var(--weight-five);
   font-family: "Averia Serif Libre", cursive;
   font-size: 2.8rem;
@@ -179,7 +179,7 @@ h5 {
   text-align: center;
 }
 
-.second-ad>p {
+.second-ad > p {
   background-color: var(--weight-two);
   font-family: serif;
   font-size: 1.2rem;
@@ -196,7 +196,7 @@ h5 {
   width: 70%;
 }
 
-.ad-image-container>h2 {
+.ad-image-container > h2 {
   position: relative;
   top: 50%;
   left: 50%;
@@ -204,5 +204,73 @@ h5 {
   font-size: 2.8rem;
 }
 
+.person-of-the-week {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-auto-rows: 1fr;
+  margin: 17px 0 17px 0;
+  background-color: var(--weight-one);
+  padding: 15px 0;
+}
 
+.person-image {
+  height: 300px;
+  width: 300px;
+  background-color: var(--weight-five);
+}
 
+.person-description {
+  margin: 0 0 30px 0;
+}
+
+.person-description h2 {
+  font-family: "Spinnaker", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  margin: 10px 10px 2rem 10px;
+  background-color: var(--weight-three);
+}
+
+.person-description p {
+  font-family: "Spinnaker", sans-serif;
+  font-size: 1.3em;
+  margin: 10px 10px 2rem 10px;
+  background-color: var(--weight-three);
+  line-height: 1.4em;
+}
+
+.more-articles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(621px, 1fr));
+  grid-auto-rows: 413px;
+  gap: 3px;
+  background-color:rgb(214, 214, 214);
+}
+
+.more-articles-item {
+  display: flex;
+  margin: 80px 60px;
+  background-color: var(--weight-one);
+}
+
+.more-articles-image {
+  height: 80px;
+  flex: 0 0 auto;
+  width: 80px;
+  margin: 0 20px 0 0;
+  background-color: var(--weight-four);
+}
+.more-articles-item article h2 {
+  font-size: 2rem;
+  font-family: "Averia Serif Libre", cursive;
+  background-color: var(--weight-three);
+}
+
+.more-articles-item article p {
+  font-size: 1rem;
+  padding-left: 0;
+  margin: 10px 0 0 0;
+  font-family: "Averia Serif Libre", cursive;
+  line-height: 1.5rem;
+  background-color: var(--weight-two);
+}
