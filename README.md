@@ -2,7 +2,7 @@
 
 > This is our fifth project on the HTML/CSS section of the course. It's an exercise in identifying the visual weight of the components in the page, and coloring them in a gray scale as a sort of "heat map"
 
-![screenshot](./assets/screenshot.png)
+![screenshot](https://github.com/ivanid22/microverse-design-teardown-project/blob/main-feature-branch/assets/screenshot.PNG)
 
 We've learned a great deal in CSS grid, flex and typography. We've also learned about design and how it applies to the different sections of a website.
 
