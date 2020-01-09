@@ -182,12 +182,13 @@ h5 {
 }
 
 footer > ul {
-  display: grid;
+  display: flex;
   background-color: var(--weight-five);
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  grid-auto-rows: 30px;
+  justify-content: center;
   align-content: center;
+  padding: 0 80px;
   height: 621px;
+  flex-wrap: wrap;
 }
 
 .ad-space-middle > div:first-child {
